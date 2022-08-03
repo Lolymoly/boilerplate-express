@@ -9,7 +9,6 @@ app.use('/public', express.static(publicRoute))
 app.use(middleware)
 
 app.get('/', (req, res) => {
-    console.log("Hello")
     const fileRoute = __dirname + "/views/index.html"
     res.sendFile(fileRoute)
 })
