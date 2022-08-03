@@ -4,7 +4,7 @@ let dotenv = require('dotenv').config()
 let middleware = require('./middleware')
 let bodyParser = require('body-parser')
 
-bodyParser.urlencoded({extended: false})
+app.use(bodyParser.urlencoded({extended: false}))
 
 const publicRoute = __dirname + "/public"
 
