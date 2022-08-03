@@ -6,10 +6,25 @@
     "cookie-parser": "^1.4.3",
     "dotenv": "^16.0.1",
     "express": "^4.14.0",
-    "fcc-express-bground": "https://github.com/freeCodeCamp/fcc-express-bground-pkg.git"
+    "fcc-express-bground": "git+https://github.com/freeCodeCamp/fcc-express-bground-pkg.git",
+    "nodemon": "^2.0.19"
   },
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
-  }
+    "start": "nodemon server.js"
+  },
+  "description": "This is the boilerplate code for the Basic Node and Express Challenges. Instructions for working on these challenges start at https://www.freecodecamp.org/learn/apis-and-microservices/basic-node-and-express/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lolymoly/boilerplate-express.git"
+  },
+  "keywords": [
+    "freecodecamp"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lolymoly/boilerplate-express/issues"
+  },
+  "homepage": "https://github.com/Lolymoly/boilerplate-express#readme"
 }
