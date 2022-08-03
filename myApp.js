@@ -2,6 +2,7 @@ let express = require('express');
 let app = express();
 let dotenv = require('dotenv').config()
 
+
 const publicRoute = __dirname + "/public"
 
 app.use('/public', express.static(publicRoute))
