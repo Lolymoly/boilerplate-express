@@ -1,11 +1,12 @@
 let express = require('express');
 let app = express();
 let dotenv = require('dotenv').config()
-
+let middleware = require('./middleware')
 
 const publicRoute = __dirname + "/public"
 
 app.use('/public', express.static(publicRoute))
+app.use(middleware.middle)
 
 app.get('/', (req, res) => {
     const fileRoute = __dirname + "/views/index.html"
