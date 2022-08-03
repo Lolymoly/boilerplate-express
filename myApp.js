@@ -2,6 +2,9 @@ let express = require('express');
 let app = express();
 let dotenv = require('dotenv').config()
 let middleware = require('./middleware')
+let bodyParser = require('body-parser')
+
+bodyParser.urlencoded({extended: false})
 
 const publicRoute = __dirname + "/public"
 
