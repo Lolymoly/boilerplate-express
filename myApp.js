@@ -14,8 +14,8 @@ app.get('/', (req, res) => {
 app.get('/json', (req, res) => {
     const message = process.env.MESSAGE_STYLE
     var response
-    if(message == "allCaps") response = "HELLO WORLD"
-    else response = "Hello World"
+    if(message == "uppercase") response = "HELLO JSON"
+    else response = "Hello json"
 
     res.json({"message" : response})
 })
