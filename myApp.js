@@ -6,7 +6,7 @@ let middleware = require('./middleware')
 const publicRoute = __dirname + "/public"
 
 app.use('/public', express.static(publicRoute))
-app.use(middleware.middle)
+app.use(middleware)
 
 app.get('/', (req, res) => {
     const fileRoute = __dirname + "/views/index.html"
